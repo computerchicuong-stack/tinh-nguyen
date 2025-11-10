@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Các Bài Tĩnh Nguyện</title>
+<style>
+    /* CSS Cơ Bản Cho Trang Chủ */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f7f6;
+        color: #333;
+    }
+
+    header {
+        background-color: #4CAF50; /* Màu xanh lá cây */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    /* Bố cục lưới cho danh sách bài tĩnh nguyện */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    /* Thiết kế cho từng mục bài tĩnh nguyện */
+    .meditation-item {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meditation-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .meditation-item a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 15px;
+        flex-grow: 1;
+    }
+
+    .content h2 {
+        margin-top: 0;
+        font-size: 1.4em;
+        color: #2e7d32;
+    }
+
+    .content p {
+        font-size: 0.95em;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    /* Sửa đổi: Đảm bảo footer và khối thông tin liên hệ được căn giữa */
+    footer {
+        text-align: center; /* Căn giữa nội dung trong thẻ footer */
+        padding: 20px 0;
+        margin-top: 50px;
+        border-top: 1px solid #ddd;
+        color: #777;
+    }
+    
+    /* Căn giữa khối thông tin liên hệ tùy chỉnh */
+    .contact-info-wrapper {
+        text-align: center; /* Căn giữa nội dung bên trong */
+        padding-bottom: 30px; /* Thêm khoảng đệm cuối trang */
+    }
+    .contact-info-wrapper > div {
+        display: inline-block; /* Cho phép khối nội dung nằm giữa */
+        text-align: left; /* Đảm bảo các dòng text trong khối vẫn được căn trái */
+        margin: 30px auto; /* Căn giữa khối trên trình duyệt */
+    }
+    /* Kết thúc Sửa đổi */
+
+    /* Responsive cho thiết bị nhỏ hơn */
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+        header h1 {
+            font-size: 1.8em;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>📖 Thư Viện Tĩnh Nguyện</h1>
+        <p>Tìm kiếm sự bình an trong lời Chúa.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-container">
+
+            <a href="bai-tinh-nguyen-1.html" class="meditation-item">
+                <img src="https://via.placeholder.com/350x200?text=Thumbnail+1" alt="Hình ảnh minh họa" class="thumbnail">
+                <div class="content">
+                    <h2>Sức Mạnh Của Lòng Biết Ơn</h2>
+                    <p>Hãy cùng chiêm nghiệm về ý nghĩa của sự biết ơn trong cuộc sống hàng ngày và cách nó biến đổi tâm hồn bạn.</p>
+                </div>
+            </a>
+
+            <a href="bai-tinh-nguyen-2.html" class="meditation-item">
+                <img src="https://via.placeholder.com/350x200?text=Thumbnail+2" alt="Hình ảnh minh họa" class="thumbnail">
+                <div class="content">
+                    <h2>Đừng Sợ Hãi, Vì Ta Ở Cùng Con</h2>
+                    <p>Bài tĩnh nguyện dựa trên một câu Kinh Thánh quen thuộc, giúp bạn tìm thấy sự an ủi và sức mạnh khi đối mặt với thử thách.</p>
+                </div>
+            </a>
+
+            <a href="bai-tinh-nguyen-3.html" class="meditation-item">
+                <img src="https://via.placeholder.com/350x200?text=Thumbnail+3" alt="Hình ảnh minh họa" class="thumbnail">
+                <div class="content">
+                    <h2>Tình Yêu Vô Điều Kiện</h2>
+                    <p>Khám phá chiều sâu của tình yêu thương mà chúng ta nhận được và cách chúng ta lan tỏa nó đến mọi người xung quanh.</p>
+                </div>
+            </a>
+
+            <a href="bai-tinh-nguyen-4.html" class="meditation-item">
+                <img src="https://via.placeholder.com/350x200?text=Thumbnail+4" alt="Hình ảnh minh họa" class="thumbnail">
+                <div class="content">
+                    <h2>Sự Tha Thứ và Tự Do</h2>
+                    <p>Một hành trình ngắn để hiểu và thực hành sự tha thứ, giải phóng bản thân khỏi gánh nặng của sự oán giận.</p>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Tĩnh Nguyện Của Bạn. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>
